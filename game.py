@@ -99,7 +99,6 @@ class Game:
         return availableMoves
 
     def checkWinner(self):
-        print(len(self.getAvailableMoves()))
         if self.checkHV() != 0 or self.checkD() != 0:
             if self.checkHV() != 0 :
                 self.winner = self.checkHV()
