@@ -239,7 +239,7 @@ class Game:
                 for move in availableMoves:
                     boardCopy = copy.deepcopy(self.board)
                     boardCopy[move[0]][move[1]] = 1
-                    value = self.TicTacToeModel.predict(boardCopy, 0)
+                    value = self.TicTacToeModel.predict(boardCopy, 2)
                     if value > maxValue:
                         maxValue = value
                         bestMove = move
